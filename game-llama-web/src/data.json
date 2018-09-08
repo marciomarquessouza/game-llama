@@ -1,0 +1,30 @@
+{
+  "posts": {
+    "-KsjWehQ--apjDBwSBCZ": {
+      "edited": {
+        "at": 1504037546,
+        "by": "7uVPJS9GHoftN58Z2MXCYDqmNAh2",
+      },
+      "title": "Cheburashka",
+      "publishedAt": 1504035908,
+      "text": "The best one: Cheburashka ",
+      "userId": "7uVPJS9GHoftN58Z2MXCYDqmNAh2",
+      ".key": "-KsjWehQ--apjDBwSBCZ"
+    },
+  },
+  "users": {
+    "7uVPJS9GHoftN58Z2MXCYDqmNAh2": {
+      "avatar": "https://i.pinimg.com/originals/60/d7/7c/60d77c8d521235b160d0dfd7e78d94a4.jpg",
+      "bio": "Strange games, please",
+      "email": "marciomultimedia@gmail.com",
+      "lastVisitAt": 1507227517,
+      "name": "Marcio Marques de Souza",
+      "posts": {
+        "-Kvd3TvfJogbWreitADe": "-Kvd3TvfJogbWreitADe",
+      },
+      "registeredAt": 1507148598,
+      "username": "marcio.souza",
+      ".key": "7uVPJS9GHoftN58Z2MXCYDqmNAh2"
+    },
+  }
+}
