@@ -6,6 +6,10 @@
 # Game-Llama
 > A place to game developers shares works, ideas, frustrations and dreams
 
+## Trello
+
+> https://trello.com/b/up8rVkC3/game-llama
+
 ## Front End Build Setup
 
 ``` bash
