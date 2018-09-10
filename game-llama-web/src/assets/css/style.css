@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+    background-color: #36465D;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #263959;
+    height: 80px;
+    padding: 0 20px;
+}
+
+.logo {
+    float: left;
+    padding-top: 5px;
+}
