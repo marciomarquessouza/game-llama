@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div class="post-body">
+      <p>teste</p>
     </div>
 </template>
 

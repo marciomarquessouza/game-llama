@@ -1,13 +1,14 @@
 @charset "UTF-8";
 
-body {
-    background-color: #36465D;
+.post-body {
+    background-color: #263959;
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     color: #2c3e50;
     margin-top: 0px;
+    height: 1200px;
 }
 
 a {
@@ -18,10 +19,9 @@ a {
 .header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    background: #263959;
+    background: #FFFFFF;
     height: 80px;
-    padding: 0 20px;
+    padding: 10px 20px 10px 20px;
 }
 
 .header-container {
@@ -31,5 +31,19 @@ a {
 
 .logo {
     float: left;
-    padding-top: 5px;
+    padding-top: 10px;
+}
+
+.right-icons {
+    padding: 20px 20px 0px 0px;
+    text-align: right;
+}
+
+.icon-space {
+    margin: 0px 10px 0px 10px;
+}
+
+.search {
+    float: center;
+    padding-top: 20px;
 }
