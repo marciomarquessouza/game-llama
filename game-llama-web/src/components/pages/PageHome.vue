@@ -26,5 +26,6 @@ export default {
 <style module>
   .initialPage {
     background-color: #FFFFFF;
+    text-align: center;
   }
 </style>

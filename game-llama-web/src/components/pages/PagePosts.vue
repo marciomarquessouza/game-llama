@@ -8,7 +8,7 @@
 <script>
 
 import PostItem from '@/components/posts/PostItem';
-import TheNavBar from '@/components/helper/TheNavBar';
+import TheNavBar from '@/components/navbar/TheNavBar';
 
 export default {
   components: {
