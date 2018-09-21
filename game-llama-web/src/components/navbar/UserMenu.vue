@@ -7,11 +7,11 @@
     <v-list>
       <v-list-tile avatar>
         <v-list-tile-avatar>
-          <img src="https://png.pngtree.com/svg/20170128/avatar_afro_black_man_beard_774214.png" alt="Marcio">
+          <img :src="user.avatar" alt="Marcio">
         </v-list-tile-avatar>
         <v-list-tile-content>
-          <v-list-tile-title>Marcio Souza</v-list-tile-title>
-          <v-list-tile-sub-title>Black Llama</v-list-tile-sub-title>
+          <v-list-tile-title>{{ user.name }}</v-list-tile-title>
+          <v-list-tile-sub-title>{{ user.category }}</v-list-tile-sub-title>
         </v-list-tile-content>
         <v-list-tile-action>
           <v-btn flat color="primary">logout</v-btn>
@@ -39,5 +39,14 @@
 </template>
 
 <script>
-export default {};
+
+import { mapGetters } from 'vuex';
+
+export default {
+  computed: {
+    ...mapGetters({
+      user: 'authUser',
+    }),
+  },
+};
 </script>
