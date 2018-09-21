@@ -7,7 +7,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     ...mochData,
-    authId: '7uVPJS9GHoftN58Z2MXCYDqmNAh2',
+    authId: 'NnooaWj4KHVxbhKwO1pEdfaQDsD2',
   },
   getters: {
     authUser(state) {

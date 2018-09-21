@@ -2,18 +2,18 @@
   <header>
     <v-toolbar>
       <v-layout row wrap>
-        <v-flex xs4>
+        <v-flex xs3>
           <router-link :to="{name:'Home'}" class="logo">
             <img src="../../assets/logo_header.png">
           </router-link>
         </v-flex>
-        <v-flex xs4>
+        <v-flex xs6>
           <search-bar class="search"></search-bar>
         </v-flex>
-        <v-flex xs4>
+        <v-flex xs3>
           <div class="right-icons">
             <v-btn flat icon color="#263959">
-              <v-icon large>edit</v-icon>
+              <v-icon large>add_circle</v-icon>
             </v-btn>
             <v-badge  color="red" overlap>
               <span   v-if="messageCounter" slot="badge">0</span>

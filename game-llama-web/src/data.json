@@ -1,4 +1,26 @@
 {
+  "categories": {
+    "-KpR7vRkiRPpbUd_TVAR": {
+      "name": "Animations",
+      "slug": "animations",
+      ".key": "-KpR7vRkiRPpbUd_TVAR"
+    },
+    "-KsjPKA6hDuHlQK_lJWO": {
+      "name": "Characters",
+      "slug": "characters",
+      ".key": "-KsjPKA6hDuHlQK_lJWO"
+    },
+    "-KvclpNRjpI5W-j0JQGU": {
+      "name": "Environments",
+      "slug": "environments",
+      ".key": "-KvclpNRjpI5W-j0JQGU"
+    },
+    "-KvclpNRjpI5W-j0JQGU": {
+      "name": "Vegetation",
+      "slug": "vegetation",
+      ".key": "-KvclpNRjpI5W-j0JQGU"
+    }
+  },
 	"posts": {
 		"-KsjWehQ--apjDBwSBCZ": {
 			"edited": {
@@ -13,7 +35,7 @@
 		}
 	},
 	"users": {
-		"7uVPJS9GHoftN58Z2MXCYDqmNAh2": {
+		"NnooaWj4KHVxbhKwO1pEdfaQDsD2": {
 			"avatar": "https://i.pinimg.com/originals/60/d7/7c/60d77c8d521235b160d0dfd7e78d94a4.jpg",
 			"bio": "Strange games, please",
 			"email": "marciomultimedia@gmail.com",
@@ -25,7 +47,40 @@
 			},
 			"registeredAt": 1507148598,
 			"username": "marcio.souza",
-			".key": "7uVPJS9GHoftN58Z2MXCYDqmNAh2"
-		}
+			".key": "NnooaWj4KHVxbhKwO1pEdfaQDsD2"
+		},
+    "38St7Q8Zi2N1SPa5ahzssq9kbyp1": {
+      "avatar": "https://i.ytimg.com/vi/ISCeOUYKfZM/hqdefault.jpg",
+      "bio": "Sem Fanatismo",
+      "email": "blackpixel@gmail.com",
+      "category": "Master Llama",
+      "lastVisitAt": 1507227517,
+      "name": "Erick Mentor",
+      "registeredAt": 1507148598,
+      "username": "blackpixel",
+      ".key": "38St7Q8Zi2N1SPa5ahzssq9kbyp1"
+    },
+    "7uVPJS9GHoftN58Z2MXCYDqmNAh2": {
+      "avatar": "https://www.biography.com/.image/t_share/MTE4MDAzNDEwNjUyMzk5MTE4/george-patton-9434904-1-402.jpg",
+      "bio": "may god have mercy upon my enemies because i won't",
+      "email": "patton@gmail.com",
+      "category": "Major Llama",
+      "lastVisitAt": 1507227517,
+      "name": "General Patton",
+      "registeredAt": 1507148598,
+      "username": "Patton",
+      ".key": "7uVPJS9GHoftN58Z2MXCYDqmNAh2"
+    },
+    "ALXhxjwgY9PinwNGHpfai6OWyDu2": {
+      "avatar": "https://1.bp.blogspot.com/-MDE_ifM7HSo/WUk0ArTKGmI/AAAAAAAANEs/O3dhuo0r8qc7y0tH7aSgcTKlqQbxjRlWwCLcBGAs/s640/hqdefault%2B%25281%2529.jpg",
+      "bio": "Lion Maru Kenzan",
+      "email": "lionman@gmail.com",
+      "category": "King Llama",
+      "lastVisitAt": 1507227517,
+      "name": "Lion Man",
+      "registeredAt": 1507148598,
+      "username": "Lion Man",
+      ".key": "ALXhxjwgY9PinwNGHpfai6OWyDu2"
+    }
 	}
 }

@@ -47,3 +47,7 @@ a {
     float: center;
     padding-top: 20px;
 }
+
+.search-types {
+    padding: 0px 10px 0px 10px;
+}
