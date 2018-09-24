@@ -1,30 +1,49 @@
 <template>
-  <div>
-    <v-layout row wrap>
-      <v-flex xs10>
-        <v-autocomplete
-                v-model="model"
-                :items="items"
-                :loading="isLoading"
-                :search-input.sync="search"
-                color="#2c3e50"
-                hide-no-data
-                hide-selected
-                item-text="Description"
-                item-value="API"
-                placeholder="Start typing to Search"
-                prepend-icon="search"
-              ></v-autocomplete>
-      </v-flex>
-      <v-flex xs2 class="search-types">
-        <v-select
-          :items="categories"
-          v-model="type"
-          label="Type"
-        ></v-select>
-      </v-flex>
-    </v-layout>
-  </div>
+<div>
+  <v-layout row wrap>
+    <v-flex xs10>
+      <v-autocomplete
+          v-model="searchItems"
+          :disabled="isUpdating"
+          :items="search"
+          color="indigo"
+          label="Select"
+          item-text="name"
+          item-value="name"
+          clearable>
+        <template slot="selection" slot-scope="data">
+          {{ data.item.name }}
+        </template>
+        <template slot="item" slot-scope="data">
+          <template v-if="typeof data.item !== 'object'">
+            <v-list-tile-content v-text="data.item">
+            </v-list-tile-content>
+          </template>
+          <template v-else>
+          <v-list-tile-avatar>
+            <img :src="data.item.avatar">
+          </v-list-tile-avatar>
+          <v-list-tile-content>
+            <v-list-tile-title v-html="data.item.name">
+            </v-list-tile-title>
+            <v-list-tile-sub-title v-html="data.item.group">
+            </v-list-tile-sub-title>
+          </v-list-tile-content>
+          </template>
+        </template>
+      </v-autocomplete>
+    </v-flex>
+    <v-flex xs2 class="search-types">
+      <v-select
+        :items="categories"
+        v-model="type"
+        color="indigo"
+        label="Type"
+        clearable>
+      </v-select>
+    </v-flex>
+  </v-layout>
+</div>
 </template>
 
 <script>
@@ -32,26 +51,25 @@
 export default {
   data() {
     return {
-      items: [],
-      isLoading: false,
-      model: null,
-      search: null,
       type: null,
-      types: [],
+      autoUpdate: true,
+      searchItems: [],
+      isUpdating: false,
     };
   },
   methods: {
-    setLoading(arg) {
-      this.isLoading = arg;
+    remove(item) {
+      const index = this.searchItems.indexOf(item.name);
+      if (index >= 0) this.searchItems.splice(index, 1);
+    },
+    setUpdating(arg) {
+      this.isUpdating = arg;
     },
   },
   watch: {
-    search(val) {
+    isUpdating(val) {
       if (val) {
-        this.setLoading(true);
-        setTimeout(() => this.setLoading(false), 3000);
-      } else {
-        this.setLoading(false);
+        setTimeout(() => this.setUpdating(false), 3000);
       }
     },
   },
@@ -59,6 +77,36 @@ export default {
     categories() {
       return Object.values(this.$store.state.categories)
         .map(category => (category.name));
+    },
+    search() {
+      let posts = [];
+      let items = [];
+      const categories = ['Posts', 'Users'];
+      categories.forEach((categoryHeader) => {
+        posts.push({ divider: true });
+        posts.push({ header: categoryHeader });
+        if (categoryHeader === 'Posts') {
+          items = Object.values(this.$store.state.posts)
+            .map(post =>
+              ({
+                name: post.title,
+                group: categoryHeader,
+                avatar: post.postImage,
+              }),
+            );
+        } else {
+          items = Object.values(this.$store.state.users)
+            .map(user =>
+              ({
+                name: user.name,
+                group: categoryHeader,
+                avatar: user.avatar,
+              }),
+            );
+        }
+        posts = posts.concat(items);
+      });
+      return posts;
     },
   },
 };
