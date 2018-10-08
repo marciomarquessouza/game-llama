@@ -7,7 +7,7 @@
     <v-list>
       <v-list-tile avatar>
         <v-list-tile-avatar>
-          <img :src="user.avatar" alt="Marcio">
+          <img :src="user.avatar" :alt="user.name">
         </v-list-tile-avatar>
         <v-list-tile-content>
           <v-list-tile-title>{{ user.name }}</v-list-tile-title>

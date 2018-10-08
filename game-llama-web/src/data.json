@@ -185,6 +185,38 @@
 			".key": "-KsjrmB3IBCu-u-09qQb"
 		}
 	},
+  "messages": {
+    "NnooaWj4KHVxbhKwO1pEdfaABDsD3": {
+			"icon": "mail",
+			"subject": "Welcome Llama",
+			"from": "administrator",
+      "bodyMessage": "Welcome to Game Llama...",
+			"sendAt": 1507148598,
+      "userId": "NnooaWj4KHVxbhKwO1pEdfaQDsD2",
+			"username": "marcio.souza",
+			".key": "NnooaWj4KHVxbhKwO1pEdfaABDsD3"
+		},
+    "NnooaWj4KHVxbhKwO1pEdfaACFsE4": {
+			"icon": "directions_run",
+			"subject": "Marcio Souza is following you",
+			"from": "marcio.souza",
+      "bodyMessage": "Marcio Souza is following you...",
+			"sendAt": 1507148598,
+      "userId": "NnooaWj4KHVxbhKwO1pEdfaQDsD2",
+			"username": "marcio.souza",
+			".key": "NnooaWj4KHVxbhKwO1pEdfaACFsE4"
+		},
+    "NnooaWj4KHVxbhKwO1pEdfaADGsF5": {
+			"icon": "directions_run",
+			"subject": "Guy Gardner is following you",
+			"from": "marcio.souza",
+      "bodyMessage": "Guy Gardner is following you...",
+			"sendAt": 1507148598,
+      "userId": "NnooaWj4KHVxbhKwO1pEdfaQDsD2",
+			"username": "guy.gardner",
+			".key": "NnooaWj4KHVxbhKwO1pEdfaADGsF5"
+		}
+  },
 	"users": {
 		"NnooaWj4KHVxbhKwO1pEdfaQDsD2": {
 			"avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSd8soSY_bx_OowjsZ8KBqY3E4pRXPbGgqfM-rQ9GEGm7_41rtNXA",
@@ -199,6 +231,11 @@
         "-KsjpzIeFTdcsBIPvUfQ": "-KsjpzIeFTdcsBIPvUfQ",
         "-KsjrmB3IBCu-u-09qQb": "-KsjrmB3IBCu-u-09qQb"
 			},
+      "messages": {
+        "NnooaWj4KHVxbhKwO1pEdfaABDsD3": "NnooaWj4KHVxbhKwO1pEdfaABDsD3",
+        "NnooaWj4KHVxbhKwO1pEdfaACFsE4": "NnooaWj4KHVxbhKwO1pEdfaACFsE4",
+        "NnooaWj4KHVxbhKwO1pEdfaADGsF5": "NnooaWj4KHVxbhKwO1pEdfaADGsF5"
+      },
 			"registeredAt": 1507148598,
 			"username": "marcio.souza",
 			".key": "NnooaWj4KHVxbhKwO1pEdfaQDsD2"
