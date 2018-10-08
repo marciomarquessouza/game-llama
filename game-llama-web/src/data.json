@@ -189,6 +189,7 @@
     "NnooaWj4KHVxbhKwO1pEdfaABDsD3": {
 			"icon": "mail",
 			"subject": "Welcome Llama",
+      "status": "new",
 			"from": "administrator",
       "bodyMessage": "Welcome to Game Llama...",
 			"sendAt": 1507148598,
@@ -199,6 +200,7 @@
     "NnooaWj4KHVxbhKwO1pEdfaACFsE4": {
 			"icon": "directions_run",
 			"subject": "Marcio Souza is following you",
+      "status": "new",
 			"from": "marcio.souza",
       "bodyMessage": "Marcio Souza is following you...",
 			"sendAt": 1507148598,
@@ -209,6 +211,7 @@
     "NnooaWj4KHVxbhKwO1pEdfaADGsF5": {
 			"icon": "directions_run",
 			"subject": "Guy Gardner is following you",
+      "status": "new",
 			"from": "marcio.souza",
       "bodyMessage": "Guy Gardner is following you...",
 			"sendAt": 1507148598,

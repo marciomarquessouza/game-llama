@@ -7,7 +7,7 @@
           :disabled="isUpdating"
           :items="search"
           color="indigo"
-          label="Select"
+          label="Search in Game-Llama"
           item-text="name"
           item-value="name"
           clearable>
