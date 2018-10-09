@@ -54,7 +54,6 @@ export default {
   data() {
     return {
       type: null,
-      autoUpdate: true,
       searchItems: [],
       isUpdating: false,
     };

@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TheNavBar.vue has the expected structure 1`] = `
+<header>
+  <v-toolbar>
+    <v-layout
+      row=""
+      wrap=""
+    >
+      <v-flex
+        xs3=""
+      >
+        <router-link
+          class="logo"
+          to="[object Object]"
+        >
+          <img
+            src="../../assets/logo_header.png"
+          />
+        </router-link>
+      </v-flex>
+       
+      <v-flex
+        xs6=""
+      >
+        <!---->
+      </v-flex>
+       
+      <v-flex
+        xs3=""
+      >
+        <div
+          class="right-icons"
+        >
+          <v-btn
+            color="#263959"
+            flat=""
+            icon=""
+          >
+            <v-icon
+              large=""
+            >
+              add_circle
+            </v-icon>
+          </v-btn>
+           
+          <!---->
+           
+          <!---->
+        </div>
+      </v-flex>
+    </v-layout>
+  </v-toolbar>
+</header>
+`;

@@ -35,9 +35,5 @@ export default {
     'search-bar': SearchBar,
     'user-messages': UserMessages,
   },
-  data() {
-    return {
-    };
-  },
 };
 </script>
