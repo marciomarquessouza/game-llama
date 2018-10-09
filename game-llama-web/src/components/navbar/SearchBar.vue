@@ -48,6 +48,8 @@
 
 <script>
 
+import { mapGetters } from 'vuex';
+
 export default {
   data() {
     return {
@@ -74,8 +76,13 @@ export default {
     },
   },
   computed: {
+    ...mapGetters({
+      getUsers: 'users',
+      getCategories: 'categories',
+      getPosts: 'posts',
+    }),
     categories() {
-      return Object.values(this.$store.state.categories)
+      return Object.values(this.getCategories)
         .map(category => (category.name));
     },
     search() {
@@ -86,7 +93,7 @@ export default {
         posts.push({ divider: true });
         posts.push({ header: categoryHeader });
         if (categoryHeader === 'Posts') {
-          items = Object.values(this.$store.state.posts)
+          items = Object.values(this.getPosts)
             .map(post =>
               ({
                 name: post.title,
@@ -95,7 +102,7 @@ export default {
               }),
             );
         } else {
-          items = Object.values(this.$store.state.users)
+          items = Object.values(this.getUsers)
             .map(user =>
               ({
                 name: user.name,

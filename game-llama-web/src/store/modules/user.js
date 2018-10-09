@@ -10,11 +10,8 @@ export default {
     authUser(state) {
       return state.users[state.authId];
     },
-    userMessages(state) {
-      return state.users[state.authId].messages;
-    },
-    messages(state) {
-      return Object.values(state.messages);
+    users(state) {
+      return state.users;
     },
   },
   actions: {

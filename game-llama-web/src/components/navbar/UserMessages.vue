@@ -1,22 +1,23 @@
 <template>
-  <v-menu :close-on-content-click="false" :nudge-width="250" bottom offset-y>
+  <v-menu :close-on-content-click="false" :nudge-width="350" bottom offset-y>
     <v-btn  flat icon
             color="#263959"
             slot="activator"
-            :class="{ llama_badge: hasMessage }"
-            :data-badge="messagesCount">
+            :class="{ llama_badge: getHasMessage }"
+            :data-badge="messagesCount"
+            @click="removeMessageBadge">
       <v-icon large>notification_important</v-icon>
     </v-btn>
     <v-card>
       <v-list two-line>
-        <div v-for="message in messages" :key="message['.key']">
+        <div v-for="userMessage in userMessages" :key="userMessage['.key']">
         <v-list-tile>
           <v-list-tile-action>
-            <v-icon color="indigo">{{ message.icon }}</v-icon>
+            <v-icon color="indigo">{{ userMessage.icon }}</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>{{ message.subject }}</v-list-tile-title>
-            <v-list-tile-sub-title>{{ message.from }}</v-list-tile-sub-title>
+            <v-list-tile-title>{{ userMessage.subject }}</v-list-tile-title>
+            <v-list-tile-sub-title>{{ userMessage.from }}</v-list-tile-sub-title>
           </v-list-tile-content>
         </v-list-tile>
         <v-divider></v-divider>
@@ -31,22 +32,28 @@
 
 import { mapGetters } from 'vuex';
 
-
 export default {
-  data() {
-    return {
-      hasMessage: true,
-      items: [],
-    };
+  mounted() {
+    this.$store.dispatch('checkNewMessages');
+  },
+  methods: {
+    removeMessageBadge() {
+      this.$store.dispatch('setHasMessages', false);
+    },
   },
   computed: {
     ...mapGetters({
-      user: 'authUser',
-      userMessages: 'userMessages',
-      messages: 'messages',
+      getAuthUser: 'authUser',
+      getUserMessages: 'userMessages',
+      getMessages: 'messages',
+      getHasMessage: 'hasMessage',
     }),
     messagesCount() {
       return Object.values(this.userMessages).length;
+    },
+    userMessages() {
+      return Object.values(this.getMessages)
+        .filter(message => this.getAuthUser['.key'] === message.userId);
     },
   },
 };
