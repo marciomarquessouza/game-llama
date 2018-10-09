@@ -1,7 +1,7 @@
 <template>
   <div>
-    <nav-bar></nav-bar>
-    <post-item></post-item>
+    <nav-bar />
+    <post-item class="llama-content" />
   </div>
 </template>
 
@@ -17,7 +17,3 @@ export default {
   },
 };
 </script>
-
-<style lang="css">
-
-</style>

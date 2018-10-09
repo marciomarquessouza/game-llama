@@ -5,10 +5,8 @@
     font-family: 'Avenir', Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
+    padding-top: 15px;
     color: #2c3e50;
-    margin-top: 0px;
-    height: 1200px;
 }
 
 a {
@@ -27,6 +25,15 @@ a {
 .header-container {
     padding: 0;
     margin: 0;
+}
+
+.llama-header {
+    position: fixed;
+    width: 100%;
+}
+
+.llama-content {
+    margin-top: 55px;
 }
 
 .logo {
@@ -69,4 +76,65 @@ a {
   	line-height:18px;
   	border-radius:50%;
   	box-shadow:0 0 1px #333;
+}
+
+.llama_card_title_box {
+    width: 540px;
+    height: 65px;
+    background-color: #ffffff;
+    box-shadow: 6px 4px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.llama_card_title_padding {
+    padding-top: 17px;
+    padding-left: 28px;
+}
+
+.llama_card_title_text_bold {
+    font-family: OpenSans;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #414141;
+}
+
+.llama_card_title_text_normal {
+    font-weight: 300;
+}
+
+.llama_card_title_text_italic {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.llama_card_title_text_blue {
+    font-weight: 300;
+    color: #4a90e2;
+}
+
+.llama_image_shaddow {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.-spites-with-love {
+  padding-left: 20px;
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #9b9b9b;
+}
+
+.-spites-with-love-text-style-1 {
+  color: #000000;
+}
+
+.-spites-with-love-text-style-2 {
+  color: #d0021b;
 }

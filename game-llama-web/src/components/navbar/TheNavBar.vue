@@ -1,6 +1,6 @@
 <template>
 <header>
-  <v-toolbar>
+  <v-toolbar fixed>
     <v-layout row wrap>
       <v-flex xs3>
         <router-link :to="{name:'Home'}" class="logo">
