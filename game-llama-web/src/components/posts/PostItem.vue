@@ -71,7 +71,7 @@ export default {
           text: 'Feature',
           align: 'left',
           sortable: false,
-          value: 'name'
+          value: 'name',
         },
         { text: 'Values', value: 'calories' },
       ],
